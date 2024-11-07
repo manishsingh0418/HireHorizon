@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import JobCard from "./components/JobCard";
-import jobData from "./JobDummyData";
 import { collection, query,orderBy,where, getDocs } from "firebase/firestore";
 import { db } from "./firebase.config";
 
