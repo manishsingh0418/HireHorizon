@@ -11,9 +11,14 @@ function JobCard(props) {
                 <div className='flex flex-col items-start gap-3'>
                     <h1 className='text-lg font-semibold'>{props.title} - {props.company}</h1>
                     <p>{props.type} &#x2022; {props.experience} &#x2022; {props.location}</p>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-2 flex-wrap'>
                         {Array.isArray(props.skills) && props.skills.map((skill) => (
-                            <p key={skill} className='text-gray-500 py-1 rounded-md border border-black'>{skill}</p>
+                            <p
+                                key={skill}
+                                className='text-gray-500 px-2 py-1 rounded-md border border-black'
+                            >
+                                {skill}
+                            </p>
                         ))}
                     </div>
                 </div>
